@@ -1,0 +1,307 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+:root{
+	--color-rojo:#7a0036;
+	--color-negro:#000914;
+	--color-beige:#fdf6f0;
+	--color-beige-claro:#fdfbf8;
+}
+
+body{
+	font-family: 'Barlow', sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+header{
+    border-bottom: 1px solid var(--color-rojo);
+    padding: 10px 0px;
+	background-color: var(--color-beige);
+	font-family: 'Barlow', sans-serif;
+	z-index: 1000;
+	}
+
+.fixed {
+  position: fixed;
+  top:0; left:0;
+  width: 100%; 
+}
+
+header .nav-item{
+	color: var(--color-rojo)
+}
+
+.btn-nav{
+    background-color: var(--color-rojo)!important;
+	border-color: var(--color-rojo);
+    border-radius: 20px!important;
+    padding: 10px 30px !important;
+    color: #fff !important;
+	display: inline-block!important;
+}
+
+.btn-nav:hover{
+    background-color: #fff!important;
+	border-color:var(--color-rojo)!important;
+	color:var(--color-rojo)!important;
+	transition: all 0.3s ease-in-out;
+}
+	
+.section{
+	padding:60px 20px;
+}
+
+#hero{
+	background-image:
+		linear-gradient( rgba(4,6,12, 0.5), rgba(4,6,12, 0.5)),
+		url("../img/hero background.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0px 0px 0px;
+}
+
+.hero-box{
+	color: #fff;
+	text-align: center;
+}
+
+.hero-box h1{
+	font-family: 'Bodoni Moda', serif;
+	font-size: 90px;
+	line-height: 1;
+}
+.hero-box h4{
+	font-family: 'Barlow', sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.hero-box p{
+	font-family: 'Barlow', sans-serif;
+	font-size: 30px;
+	font-weight: 200;
+	line-height: 1;
+}
+
+.btn-box{
+	padding: 10px 30px;
+	background-color: var(--color-rojo);
+	border-color: var(--color-rojo);
+    border-radius: 20px!important;
+    color: #fff !important;
+	display: inline-block!important;
+	text-decoration: none!important;
+}
+
+.btn-box:hover{
+    background-color: #fff!important;
+	border-color:var(--color-rojo)!important;
+	color:var(--color-rojo)!important;
+	transition: all 0.3s ease-in-out;
+}
+
+#hero .cta-btn-shop{
+	text-decoration: none;
+}
+
+#about-us{
+	background-color: var(--color-beige);
+}
+
+#about-us img{
+	width:500px;
+}
+
+.about-us-box{
+	text-align: end;
+	padding: 80px 0px;
+}
+#about-us h2{
+	font-family: 'Bodoni Moda', serif;
+	font-size: 70px;
+	font-weight:500;
+	padding-top: 20px 0px;
+}
+
+#about-us h2 span{
+	font-style: italic; 
+}
+
+#about-us p{
+	font-size: 20px;
+}
+
+#about-us a {
+	text-decoration: none;
+	color: var(--color-rojo);
+}
+
+#about-us a:hover {
+	text-decoration: underline!important;
+}
+
+#shop{
+	background-color: var(--color-beige-claro); 
+}
+
+#shop h2{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 500;
+	font-size: 70px;
+	color: var(--color-rojo);
+	padding: 20px 0px;
+}
+#shop span{
+	font-style: italic;
+}
+
+#shop article{
+	padding: 20px 20px;
+}
+.shop-box a{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+	font-size: 24px;
+	color: var(--color-negro);
+	text-decoration: none!important;
+	line-height: 1;
+}
+
+.shop-box a:hover{
+	color: var(--color-rojo);
+	text-decoration: none!important;
+}
+
+#shop .link{
+	text-decoration: none;
+	color: var(--color-rojo);
+	text-align: center;
+	padding: 20px 0px;
+}
+
+#shop .link:hover{
+	text-decoration: underline;
+}
+
+#shop img{
+	border-color: none;
+}
+
+
+#shop img:hover{
+	transform: translateY(-10px)!important;
+}
+
+
+/* Estilo de la sección de la comunidad */
+#community-section {
+	background-color: var(--color-beige);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#community-section .community-box{
+	padding: 40px 0px 40px 0px;
+}
+
+#community-section h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 500;
+	font-size: 50px;
+}
+#community-section h2 span{
+	font-style: italic;
+}
+
+#community-section p {
+    font-size: 20px;
+}
+
+/* Estilo del panel de llamada a la acción */
+.cta-panel {
+    padding: 30px 0px 30px 0px;
+}
+
+.cta-panel h3 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cta-panel form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-panel input {
+    margin-bottom: 10px;
+    padding: 10px;
+	margin-right: 0px;
+	border: none;
+	font-family: 'Barlow', sans-serif;
+}
+
+.cta-panel button {
+	margin-left: 0px;
+	margin-bottom: 10px;
+    background-color: var(--color-rojo);
+    color: white;
+    padding: 11px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.cta-panel button:hover {
+    background-color: var(--color-negro);
+}
+
+/* Estilo del pie de página */
+footer {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+	background-color: var(--color-rojo)!important;
+}
+
+footer .container{
+	padding: 50px 20px 20px 20px;
+}
+
+footer a{
+	font-family: 'Barlow', sans-serif;
+	font-weight: 200;
+	text-decoration: none;
+}
+
+footer .text-logo{
+	margin-right: 80px;
+	padding-right: 80px;
+}
+footer p{
+	font-family: 'Barlow', sans-serif;
+	font-weight: 200;	
+}
+.rights{
+	font-family: 'Barlow', sans-serif;
+	font-weight: 100!important;
+	font-size: 11px!important;
+	text-align: center;
+}
+
+.app-carousel{
+	position: static;
+}
+
